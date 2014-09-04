@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      ruby_projects:
+        title: Ruby Projects
+    ruby_projects:
+      admin:
+        ruby_projects:
+          actions:
+            create_new: 建立新的 Ruby Project
+            reorder: 对 Ruby Projects 重新排序
+            reorder_done: 对 Ruby Projects 的重新排序结束
+          records:
+            title: Ruby Projects
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Ruby Projects yet. Click "Add New Ruby Project" to add your first ruby project.
+            no_items_yet: 目前没有 Ruby Projects . 点击 "Add New Ruby Project" 创建一个ruby project.
+          ruby_project:
+            view_live_html: 查看 ruby project 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 ruby project
+            delete: 永久删除 ruby project
+      ruby_projects:
+        show:
+          other: 其他 Ruby Projects
+  activerecord:
+    attributes:
+      'refinery/ruby_projects/ruby_project':
+        name: Name
+        description: Description
+        screenshot: Screenshot
+        complete: Complete
+        created_on: Created On
+        updated_on: Updated On

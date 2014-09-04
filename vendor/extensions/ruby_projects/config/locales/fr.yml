@@ -1,0 +1,32 @@
+fr:
+  refinery:
+    plugins:
+      ruby_projects:
+        title: Ruby Projects
+    ruby_projects:
+      admin:
+        ruby_projects:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Ruby Project
+            reorder: Réordonner les Ruby Projects
+            reorder_done: Fin de réordonnancement des Ruby Projects
+          records:
+            title: Ruby Projects
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Ruby Project. Cliquer sur "Créer un(e) nouve(au/l/lle) Ruby Project" pour créer votre premi(er/ère) ruby project.'
+          ruby_project:
+            view_live_html: Voir ce(t/tte) ruby project <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) ruby project
+            delete: Supprimer définitivement ce(t/tte) ruby project
+      ruby_projects:
+        show:
+          other: Autres Ruby Projects
+  activerecord:
+    attributes:
+      'refinery/ruby_projects/ruby_project':
+        name: Name
+        description: Description
+        screenshot: Screenshot
+        complete: Complete
+        created_on: Created On
+        updated_on: Updated On

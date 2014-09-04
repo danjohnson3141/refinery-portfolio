@@ -1,0 +1,32 @@
+cs:
+  refinery:
+    plugins:
+      ruby_projects:
+        title: Ruby Projects
+    ruby_projects:
+      admin:
+        ruby_projects:
+          actions:
+            create_new: Přidat Ruby Project
+            reorder: Řadit Ruby Projects
+            reorder_done: Konec řazení Ruby Projects
+          records:
+            title: Ruby Projects
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Ruby Projects. Zvolte "Přidat Ruby Project" pro přidání prvního ruby project.
+          ruby_project:
+            view_live_html: Zobrazit náhled ruby project<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit ruby project
+            delete: Smazat ruby project
+      ruby_projects:
+        show:
+          other: Další Ruby Projects
+  activerecord:
+    attributes:
+      'refinery/ruby_projects/ruby_project':
+        name: Name
+        description: Description
+        screenshot: Screenshot
+        complete: Complete
+        created_on: Created On
+        updated_on: Updated On

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="ruby_projects">
+    <% @ruby_projects.each do |ruby_project| %>
+      <li>
+        <%= link_to ruby_project.name, refinery.ruby_projects_ruby_project_path(ruby_project) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

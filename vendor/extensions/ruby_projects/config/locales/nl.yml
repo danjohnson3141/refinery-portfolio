@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      ruby_projects:
+        title: Ruby Projects
+    ruby_projects:
+      admin:
+        ruby_projects:
+          actions:
+            create_new: Nieuwe Ruby Project toevoegen
+            reorder: De volgorde van de Ruby Projects wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Ruby Project-volgorde
+          records:
+            title: Ruby Projects
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Ruby Projects. Druk op 'Nieuwe Ruby Project toevoegen' om de eerste toe te voegen.
+          ruby_project:
+            view_live_html: Deze ruby project op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze ruby project
+            delete: Deze ruby project definitief verwijderen
+      ruby_projects:
+        show:
+          other: Andere Ruby Projects
+  activerecord:
+    attributes:
+      'refinery/ruby_projects/ruby_project':
+        name: Name
+        description: Description
+        screenshot: Screenshot
+        complete: Complete
+        created_on: Created On
+        updated_on: Updated On

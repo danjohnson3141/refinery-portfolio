@@ -1,0 +1,32 @@
+it:
+  refinery:
+    plugins:
+      ruby_projects:
+        title: Ruby Projects
+    ruby_projects:
+      admin:
+        ruby_projects:
+          actions:
+            create_new: Aggiungi Nuovo Ruby Project
+            reorder: Riordina Ruby Projects
+            reorder_done: Termina il Riordino di Ruby Projects
+          records:
+            title: Ruby Projects
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Ruby Projects. Clicca "Aggiungi Nuovo Ruby Project" per aggiungere il tuo primo ruby project.
+          ruby_project:
+            view_live_html: Guarda live questo ruby project <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo ruby project
+            delete: Rimuovi per sempre questo ruby project
+      ruby_projects:
+        show:
+          other: Altri Ruby Projects
+  activerecord:
+    attributes:
+      'refinery/ruby_projects/ruby_project':
+        name: Name
+        description: Description
+        screenshot: Screenshot
+        complete: Complete
+        created_on: Created On
+        updated_on: Updated On

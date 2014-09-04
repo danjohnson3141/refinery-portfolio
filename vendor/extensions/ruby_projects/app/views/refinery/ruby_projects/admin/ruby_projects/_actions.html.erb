@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::RubyProjects::Admin::RubyProjectsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.ruby_projects_admin_ruby_projects_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_ruby_projects_admin_ruby_project_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::RubyProjects::Admin::RubyProjectsController.sortable? && ::Refinery::RubyProjects::RubyProject.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Ruby Projects"),
+                 refinery.ruby_projects_admin_ruby_projects_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Ruby Projects"),
+                 refinery.ruby_projects_admin_ruby_projects_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

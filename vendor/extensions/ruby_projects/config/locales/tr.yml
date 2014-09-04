@@ -1,0 +1,32 @@
+tr:
+  refinery:
+    plugins:
+      ruby_projects:
+        title: Ruby Projects
+    ruby_projects:
+      admin:
+        ruby_projects:
+          actions:
+            create_new: Yeni Ekle Ruby Project
+            reorder: Tekrar sirala Ruby Projects
+            reorder_done: Tekrar siralama tamamlandiRuby Projects
+          records:
+            title: Ruby Projects
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Ruby Projects yok henuz.  Tikla "Yeni Ekle Ruby Project" eklemek senin ilk ruby project.
+          ruby_project:
+            view_live_html: Bunu canlu ruby project goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle ruby project
+            delete: Bunu Sil ruby project sonsuza dek
+      ruby_projects:
+        show:
+          other: Diger Ruby Projects
+  activerecord:
+    attributes:
+      'refinery/ruby_projects/ruby_project':
+        name: Name
+        description: Description
+        screenshot: Screenshot
+        complete: Complete
+        created_on: Created On
+        updated_on: Updated On

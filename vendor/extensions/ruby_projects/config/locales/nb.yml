@@ -1,0 +1,32 @@
+nb:
+  refinery:
+    plugins:
+      ruby_projects:
+        title: Ruby Projects
+    ruby_projects:
+      admin:
+        ruby_projects:
+          actions:
+            create_new: Lag en ny Ruby Project
+            reorder: Endre rekkefølgen på Ruby Projects
+            reorder_done: Ferdig å endre rekkefølgen Ruby Projects
+          records:
+            title: Ruby Projects
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Ruby Projects enda. Klikk på "Lag en ny Ruby Project" for å legge til din første ruby project.
+          ruby_project:
+            view_live_html: Vis hvordan denne ruby project ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne ruby project
+            delete: Fjern denne ruby project permanent
+      ruby_projects:
+        show:
+          other: Andre Ruby Projects
+  activerecord:
+    attributes:
+      'refinery/ruby_projects/ruby_project':
+        name: Name
+        description: Description
+        screenshot: Screenshot
+        complete: Complete
+        created_on: Created On
+        updated_on: Updated On
