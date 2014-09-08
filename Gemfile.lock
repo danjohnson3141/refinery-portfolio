@@ -83,6 +83,7 @@ GEM
     mime-types (1.25.1)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
+    pg (0.17.1)
     polyglot (0.3.5)
     rack (1.4.5)
     rack-cache (1.2)
@@ -204,6 +205,7 @@ DEPENDENCIES
   acts-as-taggable-on
   coffee-rails (~> 3.2.1)
   jquery-rails
+  pg
   rails (= 3.2.15)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
