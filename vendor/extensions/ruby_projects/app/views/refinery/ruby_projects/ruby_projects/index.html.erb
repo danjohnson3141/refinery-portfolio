@@ -1,11 +1,14 @@
-<% content_for :body do %>
-  <ul id="ruby_projects">
-    <% @ruby_projects.each do |ruby_project| %>
-      <li>
-        <%= link_to ruby_project.name, refinery.ruby_projects_ruby_project_path(ruby_project) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
-
-<%= render '/refinery/content_page' %>
+<section id="body_content">
+  <section id="body">
+    <div id="ruby_projects">
+      <% @ruby_projects.each do |ruby_project| %>
+      <div class="ruby_project">
+        <%= image_fu ruby_project.screenshot, "200x200", class: "image-align-#{cycle("left", "right")}" %>
+        <h2><%= ruby_project.name %></h2>
+        <%=raw ruby_project.description %>
+        <p class="more_info"><%= link_to "More Information", refinery.ruby_projects_ruby_project_path(ruby_project) %></p>
+      </div>
+      <% end %>
+    </div>
+  </section>
+</section>

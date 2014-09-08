@@ -1,0 +1,57 @@
+<% content_for :body_content_title do %>
+  <%= @ruby_project.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @ruby_project.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @ruby_project.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Screenshot</h1>
+    <p>
+      <%= image_fu @ruby_project.screenshot, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Complete</h1>
+    <p>
+      <%=raw @ruby_project.complete %>
+    </p>
+  </section>
+  <section>
+    <h1>Created On</h1>
+    <p>
+      <%=raw @ruby_project.created_on %>
+    </p>
+  </section>
+  <section>
+    <h1>Updated On</h1>
+    <p>
+      <%=raw @ruby_project.updated_on %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="ruby_projects">
+      <% @ruby_projects.each do |ruby_project| %>
+        <li>
+          <%= link_to ruby_project.name, refinery.ruby_projects_ruby_project_path(ruby_project) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>
